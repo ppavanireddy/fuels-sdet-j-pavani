@@ -8,8 +8,7 @@ class loginPage {
     async login(username, password) {
         await this.userNameInput.fill(username)
         await this.passwordInput.fill(password)
-        await this.loginButton.click()
-
+        await this.loginButton.click();
     }
 }
 module.exports = {loginPage}

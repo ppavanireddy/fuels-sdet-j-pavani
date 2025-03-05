@@ -25,7 +25,6 @@ test('Verify checkout validation in SauceDemo', async ({page}) => {
     await CheckoutPage.checkoutwithoutDetails()
 
     //validate error message
-    //await CheckoutPage.getErrorMessage()
     const ErrorMessage = await CheckoutPage.getErrorMessage()
     expect(ErrorMessage).toContain('Error: First Name is required')
 
